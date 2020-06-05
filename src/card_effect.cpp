@@ -2,36 +2,33 @@
 #include <algorithm>
 
 SingleEffect::SingleEffect():
-    gives(SCORE),
+    gives(0),
     base(0),
     counts(0),
     self(false),
     neighbours(false) {}
 
-SingleEffect::SingleEffect(char gives, char base):
+SingleEffect::SingleEffect(int gives, int base):
     gives(gives),
     base(base),
     counts(0),
     self(false),
     neighbours(false) {}
 
-SingleEffect::SingleEffect(char gives, char counts, bool self, bool neighbours):
+SingleEffect::SingleEffect(int gives, int counts, bool self, bool neighbours):
     gives(gives),
     base(0),
     counts(counts),
     self(self),
     neighbours(neighbours) {}
 
-SingleEffect::SingleEffect(char gives, char base, char counts, bool self, bool neighbours):
+SingleEffect::SingleEffect(int gives, int base, int counts, bool self, bool neighbours):
     gives(gives),
     base(base),
     counts(counts),
     self(self),
     neighbours(neighbours) {}
 
-CardEffect::CardEffect(char cardId, std::initializer_list<SingleEffect> effects):
+CardEffect::CardEffect(int cardId, std::initializer_list<SingleEffect> singEffs):
     cardId(cardId),
-    numEffs(effects.size())
-{
-    std::copy(effects.begin(), effects.end(), effs);
-}
+    singEffs(singEffs) {}

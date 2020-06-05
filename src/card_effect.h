@@ -43,26 +43,25 @@
 #define K_GREEN 37
 #define NUM_PROPS 38
 
-#define MAX_NUM_EFFS 4
+#include <vector>
 
 struct SingleEffect
 {
-    char gives;
-    char base;
-    char counts;
+    int gives;
+    int base;
+    int counts;
     bool self, neighbours;
     SingleEffect();
-    SingleEffect(char gives, char base);
-    SingleEffect(char gives, char counts, bool self, bool neighbours);
-    SingleEffect(char gives, char base, char counts, bool self, bool neighbours);
+    SingleEffect(int gives, int base);
+    SingleEffect(int gives, int counts, bool self, bool neighbours);
+    SingleEffect(int gives, int base, int counts, bool self, bool neighbours);
 };
 
 struct CardEffect
 {
-    char cardId;
-    char numEffs;
-    SingleEffect effs[MAX_NUM_EFFS];
-    CardEffect(char cardId, std::initializer_list<SingleEffect> effs);
+    int cardId;
+    std::vector<SingleEffect> singEffs;
+    CardEffect(int cardId, std::initializer_list<SingleEffect> singEffs);
 };
 
 #endif // CARD_EFFECT_H_INCLUDED

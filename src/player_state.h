@@ -2,12 +2,21 @@
 #define PLAYER_STATE_H_INCLUDED
 
 #include "card_effect.h"
-#include <set>
+#include <unordered_set>
 
 struct PlayerState
 {
-    char state[NUM_PROPS];
-    std::set built;
+    int state[NUM_PROPS];
+    std::unordered_set<int> built;
+    std::vector<SingleEffect> applyAtEndOfTurn;
+    std::vector<SingleEffect> applyAtEndOfGame;
+
+    PlayerState();
+
+    void applySingle(const SingleEffect& singEff);
+    void apply(const CardEffect& effect);
+    void finishTurn();
+    void finishGame();
 };
 
 #endif // PLAYER_STATE_H_INCLUDED
