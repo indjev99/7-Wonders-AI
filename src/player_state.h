@@ -11,7 +11,7 @@ struct PlayerState
     std::vector<SingleEffect> applyAtEndOfTurn;
     std::vector<SingleEffect> applyAtEndOfGame;
 
-    PlayerState();
+    PlayerState(int coins, int producing);
 
     void applySingle(const SingleEffect& singEff);
     void apply(const CardEffect& effect);

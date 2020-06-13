@@ -1,9 +1,11 @@
 #include "player_state.h"
 #include <algorithm>
 
-PlayerState::PlayerState()
+PlayerState::PlayerState(int coins, int producing)
 {
     std::fill(state, state + NUM_PROPS, 0);
+    state[COINS] = coins;
+    if (producing) state[producing] = 1;
 }
 
 void PlayerState::applySingle(const SingleEffect& singEff)
@@ -20,7 +22,6 @@ void PlayerState::applySingle(const SingleEffect& singEff)
             /// TO-DO: COUNT NEIGHBOURS
         }
         state[singEff.gives] += cnt * singEff.base;
-
     }
     else
     {
