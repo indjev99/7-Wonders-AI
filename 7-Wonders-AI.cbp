@@ -23,14 +23,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="src/card.cpp" />
+		<Unit filename="src/card.h" />
+		<Unit filename="src/card_cost.cpp" />
+		<Unit filename="src/card_cost.h" />
 		<Unit filename="src/card_effect.cpp" />
 		<Unit filename="src/card_effect.h" />
+		<Unit filename="src/game_constants.h" />
+		<Unit filename="src/game_state.h" />
 		<Unit filename="src/main.cpp" />
+		<Unit filename="src/player_state.cpp" />
 		<Unit filename="src/player_state.h" />
-		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
