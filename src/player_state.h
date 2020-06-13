@@ -16,6 +16,7 @@ struct PlayerState
     void buildCard(const Card& card);
     void applyEffect(const CardEffect& effect);
     void finishTurn();
+    void finishAge(int age);
     void finishGame();
 };
 

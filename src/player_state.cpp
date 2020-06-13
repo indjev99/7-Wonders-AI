@@ -1,4 +1,5 @@
 #include "player_state.h"
+#include "game_constants.h"
 #include <algorithm>
 
 PlayerState::PlayerState(int coins, int producing)
@@ -61,11 +62,29 @@ void PlayerState::finishTurn()
     applyAtEndOfTurn.clear();
 }
 
+void PlayerState::finishAge(int age)
+{
+    /// TO-DO: MILITARY COMPARISONS WITH NEIGHBOURS
+}
+
+int sciScore(int math, int eng, int hist, int wild)
+{
+    if (wild == 0)
+    {
+        return std::min(math, std::min(eng, hist)) * SCORE_PER_SCI_COMBO + math * math + eng * eng + hist * hist;
+    }
+    return std::max(sciScore(math + 1, eng, hist, wild - 1),
+           std::max(sciScore(math, eng + 1, hist, wild - 1),
+                    sciScore(math, eng, hist + 1, wild - 1)));
+}
+
 void PlayerState::finishGame()
 {
     for (const CardEffect& effect : applyAtEndOfGame)
     {
         applyEffect(effect);
     }
-    applyAtEndOfGame.clear();
+    state[SCORE] += state[COINS] / COINS_PER_SCORE;
+    state[SCORE] += state[M_LOSSES] * SCORE_PER_LOSS;
+    state[SCORE] += sciScore(state[S_MATH], state[S_ENG], state[S_HIST], state[S_WILD]);
 }
