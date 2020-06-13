@@ -8,64 +8,64 @@ PlayerState::PlayerState(int coins, int producing)
     if (producing) state[producing] = 1;
 }
 
-void PlayerState::applySingle(const SingleEffect& singEff)
+void PlayerState::buildCard(const Card& card)
 {
-    if (singEff.counts)
+    built.insert(card.cardId);
+    for (const CardEffect& effect : card.effects)
     {
-        int cnt = 0;
-        if (singEff.self)
+        if (effect.counts)
         {
-            cnt += state[singEff.counts];
-        }
-        if (singEff.neighbours)
-        {
-            /// TO-DO: COUNT NEIGHBOURS
-        }
-        state[singEff.gives] += cnt * singEff.base;
-    }
-    else
-    {
-        state[singEff.gives] += singEff.base;
-    }
-}
-
-void PlayerState::apply(const CardEffect& effect)
-{
-    built.insert(effect.cardId);
-    for (const SingleEffect& singEff : effect.singEffs)
-    {
-        if (singEff.counts)
-        {
-            if (singEff.gives == SCORE)
+            if (effect.gives == SCORE)
             {
-                applyAtEndOfGame.push_back(singEff);
+                applyAtEndOfGame.push_back(effect);
             }
             else
             {
-                applyAtEndOfTurn.push_back(singEff);
+                applyAtEndOfTurn.push_back(effect);
             }
         }
         else
         {
-            applySingle(singEff);
+            applyEffect(effect);
         }
+    }
+}
+
+void PlayerState::applyEffect(const CardEffect& effect)
+{
+    if (effect.counts)
+    {
+        int cnt = 0;
+        if (effect.self)
+        {
+            cnt += state[effect.counts];
+        }
+        if (effect.neighbours)
+        {
+            /// TO-DO: COUNT NEIGHBOURS
+        }
+        state[effect.gives] += cnt * effect.base;
+    }
+    else
+    {
+        state[effect.gives] += effect.base;
     }
 }
 
 void PlayerState::finishTurn()
 {
-    for (const SingleEffect& singEff : applyAtEndOfTurn)
+    for (const CardEffect& effect : applyAtEndOfTurn)
     {
-        applySingle(singEff);
+        applyEffect(effect);
     }
     applyAtEndOfTurn.clear();
 }
 
 void PlayerState::finishGame()
 {
-    for (const SingleEffect& singEff : applyAtEndOfGame)
+    for (const CardEffect& effect : applyAtEndOfGame)
     {
-        applySingle(singEff);
+        applyEffect(effect);
     }
     applyAtEndOfGame.clear();
 }

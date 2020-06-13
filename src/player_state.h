@@ -1,20 +1,20 @@
 #ifndef PLAYER_STATE_H_INCLUDED
 #define PLAYER_STATE_H_INCLUDED
 
-#include "card_effect.h"
+#include "card.h"
 #include <unordered_set>
 
 struct PlayerState
 {
     int state[NUM_PROPS];
     std::unordered_set<int> built;
-    std::vector<SingleEffect> applyAtEndOfTurn;
-    std::vector<SingleEffect> applyAtEndOfGame;
+    std::vector<CardEffect> applyAtEndOfTurn;
+    std::vector<CardEffect> applyAtEndOfGame;
 
     PlayerState(int coins, int producing);
 
-    void applySingle(const SingleEffect& singEff);
-    void apply(const CardEffect& effect);
+    void buildCard(const Card& card);
+    void applyEffect(const CardEffect& effect);
     void finishTurn();
     void finishGame();
 };

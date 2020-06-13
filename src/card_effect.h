@@ -43,25 +43,17 @@
 #define K_GREEN 37
 #define NUM_PROPS 38
 
-#include <vector>
-
-struct SingleEffect
+struct CardEffect
 {
     int gives;
     int base;
     int counts;
     bool self, neighbours;
-    SingleEffect();
-    SingleEffect(int gives, int base);
-    SingleEffect(int gives, int counts, bool self, bool neighbours);
-    SingleEffect(int gives, int base, int counts, bool self, bool neighbours);
-};
 
-struct CardEffect
-{
-    int cardId;
-    std::vector<SingleEffect> singEffs;
-    CardEffect(int cardId, std::initializer_list<SingleEffect> singEffs);
+    CardEffect();
+    CardEffect(int gives, int base);
+    CardEffect(int gives, int counts, bool self, bool neighbours);
+    CardEffect(int gives, int base, int counts, bool self, bool neighbours);
 };
 
 #endif // CARD_EFFECT_H_INCLUDED
