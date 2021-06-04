@@ -1,0 +1,46 @@
+Name: Rhodes
+Effect: Iron
+A: Rhodes A 1, Rhodes A 2, Rhodes A 3
+B: Rhodes B 1, Rhodes B 2
+
+---------
+
+Name: Alexandria
+Effect: Glass
+A: Alexandria A 1, Alexandria A 2, Alexandria A 3
+B: Alexandria B 1, Alexandria B 2, Alexandria B 3
+
+---------
+
+Name: Ephesus
+Effect: Paper
+A: Ephesus A 1, Ephesus A 2, Ephesus A 3
+B: Ephesus B 1, Ephesus B 2, Ephesus B 3
+
+---------
+
+Name: Babylon
+Effect: Clay
+A: Babylon A 1, Babylon A 2, Babylon A 3
+B: Babylon B 1, Babylon B 2, Babylon B 3
+
+---------
+
+Name: Olympia
+Effect: Wood
+A: Olympia A 1, Olympia A 2, Olympia A 3
+B: Olympia B 1, Olympia B 2, Olympia B 3
+
+---------
+
+Name: Halicarnassus
+Effect: Cloth
+A: Halicarnassus A 1, Halicarnassus A 2, Halicarnassus A 3
+B: Halicarnassus B 1, Halicarnassus B 2, Halicarnassus B 3
+
+---------
+
+Name: Giza
+Effect: Stone
+A: Giza A 1, Giza A 2, Giza A 3
+B: Giza B 1, Giza B 2, Giza B 3, Giza B 4

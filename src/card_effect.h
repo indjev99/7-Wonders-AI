@@ -3,6 +3,8 @@
 
 #include <initializer_list>
 
+// TO-DO: Add a "Build Discarded" effect
+
 #define SCORE 0
 #define COINS 1
 #define M_POWER 2
@@ -31,16 +33,17 @@
 #define C_FORUM 25
 #define W_FREE 26
 #define W_LAST 27
-#define W_FREEUSED 28
-#define W_GUILDCOPY 29
-#define K_WONDER 30
-#define K_BROWN 31
-#define K_GRAY 32
-#define K_BLUE 33
-#define K_RED 34
-#define K_YELLOW 35
-#define K_GREEN 36
-#define NUM_PROPS 37
+#define W_DISCARDED 28
+#define W_COPYGUILD 29
+#define W_FREEUSED 30
+#define K_WONDER 31
+#define K_BROWN 32
+#define K_GRAY 33
+#define K_BLUE 34
+#define K_RED 35
+#define K_YELLOW 36
+#define K_GREEN 37
+#define NUM_PROPS 38
 
 struct CardEffect
 {
@@ -51,8 +54,7 @@ struct CardEffect
 
     CardEffect();
     CardEffect(int gives, int base);
-    CardEffect(int gives, int counts, bool self, bool neighbours);
-    CardEffect(int gives, int base, int counts, bool self, bool neighbours);
+    CardEffect(int gives, int mult, int counts, bool self, bool neighbours);
 };
 
 #endif // CARD_EFFECT_H_INCLUDED

@@ -1,0 +1,824 @@
+Name: Lumber Yard
+Effect: Wood
+Color: Brown
+
+---------
+
+Name: Stone Pit
+Effect: Stone
+Color: Brown
+
+---------
+
+Name: Clay Pit
+Effect: Clay
+Color: Brown
+
+---------
+
+Name: Ore Vein
+Effect: Iron
+Color: Brown
+
+---------
+
+Name: Tree Farm
+Effect: Wood/Clay
+Cost: Coin
+Color: Brown
+
+---------
+
+Name: Excavation
+Effect: Stone/Clay
+Cost: Coin
+Color: Brown
+
+---------
+
+Name: Clay Pit
+Effect: Clay/Iron
+Cost: Coin
+Color: Brown
+
+---------
+
+Name: Timber Yard
+Effect: Wood/Stone
+Cost: Coin
+Color: Brown
+
+---------
+
+Name: Forest Cave
+Effect: Wood/Iron
+Cost: Coin
+Color: Brown
+
+---------
+
+Name: Mine
+Effect: Stone/Iron
+Cost: Coin
+Color: Brown
+
+---------
+
+Name: Sawmill
+Effect: Wood 2
+Cost: Coin
+Color: Brown
+
+---------
+
+Name: Quarry
+Effect: Stone 2
+Cost: Coin
+Color: Brown
+
+---------
+
+Name: Brickyard
+Effect: Clay 2
+Cost: Coin
+Color: Brown
+
+---------
+
+Name: Foundry
+Effect: Iron 2
+Cost: Coin
+Color: Brown
+
+---------
+
+Name: Loom
+Effect: Cloth
+Color: Gray
+
+---------
+
+Name: Glassworks
+Effect: Glass
+Color: Gray
+
+---------
+
+Name: Press
+Effect: Paper
+Color: Gray
+
+---------
+
+Name: Apothecary
+Effect: Math
+Cost: Cloth
+Color: Green
+
+---------
+
+Name: Workshop
+Effect: Engineering
+Cost: Glass
+Color: Green
+
+---------
+
+Name: Scriptorium
+Effect: History
+Cost: Paper
+Color: Green
+
+---------
+
+Name: Dispensary
+Effect: Math
+Cost: Iron 2, Glass
+Free: Apothecary
+Color: Green
+
+---------
+
+Name: Laboratory
+Effect: Engineering
+Cost: Clay 2, Paper
+Free: Workshop
+Color: Green
+
+---------
+
+Name: Library
+Effect: History
+Cost: Stone 2, Cloth
+Free: Scriptorium
+Color: Green
+
+---------
+
+Name: School
+Effect: History
+Cost: Wood, Paper
+Color: Green
+
+---------
+
+Name: Lodge
+Effect: Math
+Cost: Clay 2, Cloth, Paper
+Free: Dispensary
+Color: Green
+
+---------
+
+Name: Observatory
+Effect: Engineering
+Cost: Iton 2, Glass, Cloth
+Free: Laboratory
+Color: Green
+
+---------
+
+Name: University
+Effect: History
+Cost: Wood 2, Paper, Glass
+Free: Library
+Color: Green
+
+---------
+
+Name: Academy
+Effect: Math
+Cost: Stone 3, Glass
+Free: School
+Color: Green
+
+---------
+
+Name: Study
+Effect: Engineering
+Cost: Wood, Paper, Cloth
+Free: School
+Color: Green
+
+---------
+
+Name: Pawnshop
+Effect: Score 3
+Color: Blue
+
+---------
+
+Name: Baths
+Effect: Score 3
+Cost: Stone
+Color: Blue
+
+---------
+
+Name: Altar
+Effect: Score 2
+Color: Blue
+
+---------
+
+Name: Theater
+Effect: Score 2
+Color: Blue
+
+---------
+
+Name: Aqueduct
+Effect: Score 5
+Cost: Stone 3
+Free: Baths
+Color: Blue
+
+---------
+
+Name: Temple
+Effect: Score 3
+Cost: Wood, Clay, Glass
+Free: Altar
+Color: Blue
+
+---------
+
+Name: Statue
+Effect: Score 4
+Cost: Wood, Iron 2
+Free: Theater
+Color: Blue
+
+---------
+
+Name: Pantheon
+Effect: Score 7
+Cost: Clay 2, Iron, Paper, Cloth, Glass
+Free: Temple
+Color: Blue
+
+---------
+
+Name: Gardens
+Effect: Score 5
+Cost: Wood, Clay 2
+Free: Statue
+Color: Blue
+
+---------
+
+Name: Town Hall
+Effect: Score 6
+Cost: Glass, Iron, Stone 2
+Color: Blue
+
+---------
+
+Name: Palace
+Effect: Score 8
+Cost: Glass, Paper, Cloth, Clay, Wood, Iron, Stone
+Color: Blue
+
+---------
+
+Name: Courthouse
+Effect: Score 4
+Cost: Clay 2, Cloth
+Free: Scriptorium
+Color: Blue
+
+---------
+
+Name: Senate
+Effect: Score 6
+Cost: Iron, Stone, Wood 2
+Free: Library
+Color: Blue
+
+---------
+
+Name: Stockade
+Effect: Power
+Cost: Wood
+Color: Red
+
+---------
+
+Name: Barracks
+Effect: Power
+Cost: Iron
+Color: Red
+
+---------
+
+Name: Guard Tower
+Effect: Power
+Cost: Clay
+Color: Red
+
+---------
+
+Name: Walls
+Effect: Power 2
+Cost: Stone 3
+Color: Red
+
+---------
+
+Name: Training Ground
+Effect: Power 2
+Cost: Wood, Iron 2
+Color: Red
+
+---------
+
+Name: Stables
+Effect: Power 2
+Cost: Iron, Clay, Wood
+Free: Apothecary
+Color: Red
+
+---------
+
+Name: Archery Range
+Effect: Power 2
+Cost: Wood 2, Iron
+Free: Workshop
+Color: Red
+
+---------
+
+Name: Fortifications
+Effect: Power 3
+Cost: Stone, Iron 3
+Free: Walls
+Color: Red
+
+---------
+
+Name: Circus
+Effect: Power 3
+Cost: Stone 3, Iron
+Free: Training Ground
+Color: Red
+
+---------
+
+Name: Arsenal
+Effect: Power 3
+Cost: Iron, Wood 2, Cloth
+Color: Red
+
+---------
+
+Name: Siege Workshop
+Effect: Power 3
+Cost: Woord, Clay 3
+Free: Laboratory
+Color: Red
+
+---------
+
+Name: Tavern
+Effect: Coin 5
+Color: Yellow
+
+---------
+
+Name: East Trading Post
+Effect: EastTradingPost
+Color: Yellow
+
+---------
+
+Name: West Trading Post
+Effect: WestTradingPost
+Color: Yellow
+
+---------
+
+Name: Marketplace
+Effect: Marketplace
+Color: Yellow
+
+---------
+
+Name: Forum
+Effect: Forum
+Cost: Clay 2
+Free: East Trading Post, West Trading Post
+Color: Yellow
+
+---------
+
+Name: Caravansery
+Effect: Caravansery
+Cost: Wood 2
+Free: Marketplace
+Color: Yellow
+
+---------
+
+Name: Vineyard
+Effect: Coin 1 Brown Self Neighbours
+Color: Yellow
+
+---------
+
+Name: Bazar
+Effect: Coin 2 Gray Self Neighbours
+Color: Yellow
+
+---------
+
+Name: Heaven
+Effect: Coin 1 Brown Self, Score 1 Brown Self
+Cost: Cloth, Iron, Wood
+Free: Forum
+Color: Yellow
+
+---------
+
+Name: Lighthouse
+Effect: Coin 1 Yellow Self, Score 1 Yellow Self
+Cost: Glass, Stone
+Free: Caravansery
+Color: Yellow
+
+---------
+
+Name: Chamber of Commerce
+Effect: Coin 2 Gray Self, Score 2 Gray Self
+Cost: Clay 2, Paper
+Color: Yellow
+
+---------
+
+Name: Arena
+Effect: Coin 3 Wonder Self, Score 1 Wonder Self
+Cost: Iron, Stone 2
+Color: Yellow
+
+---------
+
+Name: Workers' Guild
+Effect: Score 1 Brown Neighbours
+Cost: Iron 2, Clay, Stone, Wood
+Color: Purple
+
+---------
+
+Name: Craftsmen's Guild
+Effect: Score 2 Gray Neighbours
+Cost: Iron 2, Stone 2
+Color: Purple
+
+---------
+
+Name: Traders' Guild
+Effect: Score 1 Yellow Neighbours
+Cost: Cloth, Paper, Glass
+Color: Purple
+
+---------
+
+Name: Philosophers' Guild
+Effect: Score 1 Green Neighbours
+Cost: Clay 3, Cloth, Paper
+Color: Purple
+
+---------
+
+Name: Spies' Guild
+Effect: Score 1 Red Neighbours
+Cost: Clay 3, Glass
+Color: Purple
+
+---------
+
+Name: Strategists' Guild
+Effect: Score 1 Loss Neighbours
+Cost: Iron 2, Stone, Cloth
+Color: Purple
+
+---------
+
+Name: Shipowners' Guild
+Effect: Score 1 Brown Self, Score 1 Gray Self, Score 1 Purple Self
+Cost: Wood 3, Paper, Glass
+Color: Purple
+
+---------
+
+Name: Scientists' Guild
+Effect: Wildcard
+Cost: Wood 2, Iron 2, Paper
+Color: Purple
+
+---------
+
+Name: Magistrates' Guild
+Effect: Score 1 Blue Neighbours
+Cost: Wood 3, Stone, Cloth
+Color: Purple
+
+---------
+
+Name: Builders' Guild
+Effect: Score 1 Wonder Self Neighbours
+Cost: Stone 2, Clay 2, Glass
+Color: Purple
+
+---------
+
+Name: Rhodes A 1
+Effect: Score 3
+Cost: Wood 2
+Color: Wonder
+
+---------
+
+Name: Rhodes A 2
+Effect: Power 2
+Cost: Clay 3
+Color: Wonder
+
+---------
+
+Name: Rhodes A 3
+Effect: Score 7
+Cost: Iron 4
+Color: Wonder
+
+---------
+
+Name: Alexandria A 1
+Effect: Score 3
+Cost: Stone 2
+Color: Wonder
+
+---------
+
+Name: Alexandria A 2
+Effect: Caravansery
+Cost: Iron 2
+Color: Wonder
+
+---------
+
+Name: Alexandria A 3
+Effect: Score 7
+Cost: Glass 2
+Color: Wonder
+
+---------
+
+Name: Ephesus A 1
+Effect: Score 3
+Cost: Stone 2
+Color: Wonder
+
+---------
+
+Name: Ephesus A 2
+Effect: Coin 9
+Cost: Wood 2
+Color: Wonder
+
+---------
+
+Name: Ephesus A 3
+Effect: Score 7
+Cost: Paper 2
+Color: Wonder
+
+---------
+
+Name: Babylon A 1
+Effect: Score 3
+Cost: Clay 2
+Color: Wonder
+
+---------
+
+Name: Babylon A 2
+Effect: Wildcard
+Cost: Wood 3
+Color: Wonder
+
+---------
+
+Name: Babylon A 3
+Effect: Score 7
+Cost: Clay 4
+Color: Wonder
+
+---------
+
+Name: Olympia A 1
+Effect: Score 3
+Cost: Wood 2
+Color: Wonder
+
+---------
+
+Name: Olympia A 2
+Effect: FreeCard
+Cost: Stone 2
+Color: Wonder
+
+---------
+
+Name: Olympia A 3
+Effect: Score 7
+Cost: Iron 2
+Color: Wonder
+
+---------
+
+Name: Halicarnassus A 1
+Effect: Score 3
+Cost: Clay 2
+Color: Wonder
+
+---------
+
+Name: Halicarnassus A 2
+Effect: BuildDiscarded
+Cost: Iron 3
+Color: Wonder
+
+---------
+
+Name: Halicarnassus A 3
+Effect: Score 7
+Cost: Cloth 2
+Color: Wonder
+
+---------
+
+Name: Giza A 1
+Effect: Score 3
+Cost: Stone 2
+Color: Wonder
+
+---------
+
+Name: Giza A 2
+Effect: Score 5
+Cost: Wood 3
+Color: Wonder
+
+---------
+
+Name: Giza A 3
+Effect: Score 7
+Cost: Stone 4
+Color: Wonder
+
+---------
+
+Name: Rhodes B 1
+Effect: Power, Score 3, Coin 3
+Cost: Stone 3
+Color: Wonder
+
+---------
+
+Name: Rhodes B 2
+Effect: Power, Score 4, Coin 4
+Cost: Iron 4
+Color: Wonder
+
+---------
+
+Name: Alexandria B 1
+Effect: Caravansery
+Cost: Clay 2
+Color: Wonder
+
+---------
+
+Name: Alexandria B 2
+Effect: Marketplace
+Cost: Wood 2
+Color: Wonder
+
+---------
+
+Name: Alexandria B 3
+Effect: Score 7
+Cost: Stone 3
+Color: Wonder
+
+---------
+
+Name: Ephesus B 1
+Effect: Score 2, Coin 4
+Cost: Stone 2
+Color: Wonder
+
+---------
+
+Name: Ephesus B 2
+Effect: Score 3, Coin 4
+Cost: Wood 2
+Color: Wonder
+
+---------
+
+Name: Ephesus B 3
+Effect: Score 5, Coin 4
+Cost: Paper, Cloth, Glass
+Color: Wonder
+
+---------
+
+Name: Babylon B 1
+Effect: Score 3
+Cost: Cloth, Clay
+Color: Wonder
+
+---------
+
+Name: Babylon B 2
+Effect: PlayLastCard
+Cost: Glass, Wood 2
+Color: Wonder
+
+---------
+
+Name: Babylon B 3
+Effect: Wildcard
+Cost: Paper, Clay 3
+Color: Wonder
+
+---------
+
+Name: Olympia B 1
+Effect: EastTradingPost, WestTradingPost
+Cost: Wood 2
+Color: Wonder
+
+---------
+
+Name: Olympia B 2
+Effect: Score 5
+Cost: Stone 2
+Color: Wonder
+
+---------
+
+Name: Olympia B 3
+Effect: CopyGuild
+Cost: Iron 2
+Color: Wonder
+
+---------
+
+Name: Halicarnassus B 1
+Effect: Score 2, BuildDiscarded
+Cost: Iron 2
+Color: Wonder
+
+---------
+
+Name: Halicarnassus B 2
+Effect: Score 1, BuildDiscarded
+Cost: Clay 3
+Color: Wonder
+
+---------
+
+Name: Halicarnassus B 3
+Effect: BuildDiscarded
+Cost: Glass, Paper, Cloth
+Color: Wonder
+
+---------
+
+Name: Giza B 1
+Effect: Score 3
+Cost: Wood 2
+Color: Wonder
+
+---------
+
+Name: Giza B 2
+Effect: Score 5
+Cost: Stone 3
+Color: Wonder
+
+---------
+
+Name: Giza B 3
+Effect: Score 5
+Cost: Clay 3
+Color: Wonder
+
+---------
+
+Name: Giza B 4
+Effect: Score 7
+Cost: Paper, Stone 4
+Color: Wonder

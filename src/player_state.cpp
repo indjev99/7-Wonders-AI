@@ -64,7 +64,11 @@ void PlayerState::finishTurn()
 
 void PlayerState::finishAge(int age)
 {
+    state[W_FREE] += state[W_FREEUSED];
+    state[W_FREEUSED] = 0;
+
     /// TO-DO: MILITARY COMPARISONS WITH NEIGHBOURS
+    
 }
 
 int sciScore(int math, int eng, int hist, int wild)
@@ -87,4 +91,6 @@ void PlayerState::finishGame()
     state[SCORE] += state[COINS] / COINS_PER_SCORE;
     state[SCORE] += state[M_LOSSES] * SCORE_PER_LOSS;
     state[SCORE] += sciScore(state[S_MATH], state[S_ENG], state[S_HIST], state[S_WILD]);
+
+    // TO-DO: Copy Guild
 }

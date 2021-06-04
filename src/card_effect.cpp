@@ -14,16 +14,9 @@ CardEffect::CardEffect(int gives, int base):
     self(false),
     neighbours(false) {}
 
-CardEffect::CardEffect(int gives, int counts, bool self, bool neighbours):
+CardEffect::CardEffect(int gives, int mult, int counts, bool self, bool neighbours):
     gives(gives),
-    base(0),
-    counts(counts),
-    self(self),
-    neighbours(neighbours) {}
-
-CardEffect::CardEffect(int gives, int base, int counts, bool self, bool neighbours):
-    gives(gives),
-    base(base),
+    base(mult),
     counts(counts),
     self(self),
     neighbours(neighbours) {}

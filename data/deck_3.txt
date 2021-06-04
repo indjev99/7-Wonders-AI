@@ -1,0 +1,77 @@
+Lumber Yard
+Stone Pit
+Clay Pool
+Ore Vein
+Clay Pit
+Timber Yard
+Loom
+Glassworks
+Press
+Apothecary
+Workshop
+Scriptorium
+Baths
+Altar
+Theater
+East Trading Post
+West Trading Post
+Marketplace
+Stockade
+Barracks
+Guard Tower
+
+---------
+
+Sawmill
+Quarry
+Brickyard
+Foundry
+Loom
+Glass
+Press
+Dispensary
+Laboratory
+Library
+School
+Aqueduct
+Temple
+Statue
+Courthouse
+Forum
+Caravansery
+Vineyard
+Walls
+Stables
+Archery Range
+
+---------
+
+Lodge
+Observatory
+University
+Academy
+Study
+Pantheon
+Gardens
+Town Hall
+Palace
+Senate
+Heaven
+Lighthouse
+Arena
+Fortifications
+Arsenal
+Siege Workshop
+
+---------
+
+Workers' Guild
+Craftsmen's Guild
+Traders' Guild
+Philosophers' Guild
+Spies' Guild
+Strategists' Guild
+Shipowners' Guild
+Scientists' Guild
+Magistrates' Guild
+Builders' Guild
