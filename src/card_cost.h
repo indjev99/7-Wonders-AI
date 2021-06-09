@@ -18,7 +18,6 @@ struct CardCost
     int costs[NUM_COSTS];
     std::vector<int> freeChains;
 
-    CardCost();
     CardCost(const std::vector<std::pair<int, int>>& costPairs, const std::vector<int>& freeChains);
 };
 

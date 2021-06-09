@@ -11,7 +11,7 @@ PlayerState::PlayerState(int coins, int producing)
 
 void PlayerState::buildCard(const Card& card)
 {
-    built.insert(card.cardId);
+    built.insert(card.id);
     for (const CardEffect& effect : card.effects)
     {
         if (effect.counts)

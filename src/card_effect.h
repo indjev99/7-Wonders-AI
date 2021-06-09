@@ -52,7 +52,6 @@ struct CardEffect
     int counts;
     bool self, neighbours;
 
-    CardEffect();
     CardEffect(int gives, int base);
     CardEffect(int gives, int mult, int counts, bool self, bool neighbours);
 };

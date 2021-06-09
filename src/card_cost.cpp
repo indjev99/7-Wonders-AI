@@ -1,8 +1,6 @@
 #include "card_cost.h"
 #include <algorithm>
 
-CardCost::CardCost() {}
-
 CardCost::CardCost(const std::vector<std::pair<int, int>>& costPairs, const std::vector<int>& freeChains):
     freeChains(freeChains)
 {
